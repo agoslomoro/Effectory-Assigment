@@ -3,24 +3,22 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Effectory_Assigment.Context
 {
     public class JsonContext
-    {
-        public List<Questionnaire> Questionnaires { get; set;}
+	{
+		public List<Questionnaire> Questionnaires { get; set; }
 
-        public JsonContext(string fileName)
-        {
-            if (string.IsNullOrEmpty(fileName))
-            {
-                throw new Exception("File Name can not be null.");
-            }
+		public JsonContext(string fileName)
+		{
+			if (string.IsNullOrEmpty(fileName))
+			{
+				throw new Exception("File Name can not be null.");
+			}
 
-            var questionnaireJson = File.ReadAllText(fileName);
-            Questionnaires = JsonConvert.DeserializeObject<List<Questionnaire>>(questionnaireJson);
-        }
-    }
+			var questionnaireJson = File.ReadAllText(fileName);
+			Questionnaires = JsonConvert.DeserializeObject<List<Questionnaire>>(questionnaireJson);
+		}
+	}
 }

@@ -1,15 +1,13 @@
 ﻿using Effectory_Assigment.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Effectory_Assigment.Repository.Interface
 {
     public interface IQuestionnaireAnswerRepository
-    {
-        Task<int> CreateAnswerAsync(QuestionnairePostAnswer postAnswer);
-        Task<int[]> CreateAnswersAsync(IEnumerable<QuestionnairePostAnswer> postAnswer);
-        Task<List<QuestionnairePostAnswer>> GetAllAnswers();
-    }
+	{
+		Task<int> CreateAnswerAsync(QuestionnairePostAnswer postAnswer);
+		Task<int[]> CreateAnswersAsync(IEnumerable<QuestionnairePostAnswer> postAnswer);
+		Task<List<QuestionnairePostAnswer>> GetAllAnswers();
+	}
 }
