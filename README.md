@@ -14,11 +14,11 @@ Stack:
 .Net Core 3.1
 
 Libraries:
-Microsoft.AspNetCore.Mvc.NewtonsoftJson
-Microsoft.EntityFrameworkCore
-Microsoft.EntityFrameworkCore.InMemory
-Microsoft.EntityFrameworkCore.Tools
-Newtonsoft.Json
+-	Microsoft.AspNetCore.Mvc.NewtonsoftJson
+-	Microsoft.EntityFrameworkCore
+-	Microsoft.EntityFrameworkCore.InMemory
+-	Microsoft.EntityFrameworkCore.Tools
+-	Newtonsoft.Json
 
 
 Testing using postman:
